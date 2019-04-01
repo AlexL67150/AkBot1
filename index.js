@@ -41,5 +41,14 @@ bot.on('message', function (message)
     }
 })
 
+bot.on('message', function (message) 
+{
+    if (message.content.includes ("War ended!"))
+    {
+        bot.channels.get("501324980861272066").send('<@&561304424212070431> : GDC Clash Royale, la guerre est terminée !!!');    
+    }
+})
+
+
 
 bot.login(process.env.TOKEN);
